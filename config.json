@@ -4,12 +4,12 @@
     "dbg": false
   },
   "auth": {
-    "accountId": "",
-    "deviceId": "",
-    "secret": ""
+    "accountId": "eee",
+    "deviceId": "eeee",
+    "secret": "eeeee"
   },
   "giftToInfo": {
-    "accounts": ["", ""]
+    "accounts": ["eeeeee", "eeeeeee"]
   },
   "developerSettings": {
     "enabled": true,
