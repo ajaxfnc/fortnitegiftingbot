@@ -1,4 +1,9 @@
 {
+  "discord": {
+    "useDiscordBot": true,
+    "token": "",
+    "dbg": false
+  },
   "auth": {
     "accountId": "",
     "deviceId": "",
@@ -8,7 +13,7 @@
     "accounts": ["", ""]
   },
   "developerSettings": {
-    "enabled": true
+    "enabled": true,
     "useCustomAccess": true,
     "debugMode": false
   }
