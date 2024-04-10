@@ -1,0 +1,15 @@
+{
+  "auth": {
+    "accountId": "",
+    "deviceId": "",
+    "secret": ""
+  },
+  "giftToInfo": {
+    "accounts": ["", ""]
+  },
+  "developerSettings": {
+    "enabled": true
+    "useCustomAccess": true,
+    "debugMode": false
+  }
+}
