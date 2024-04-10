@@ -4,9 +4,9 @@
     "dbg": false
   },
   "auth": {
-    "accountId": "eee",
-    "deviceId": "eeee",
-    "secret": "eeeee"
+    "accountId": "729d401208d544d38c5821726edc4d5d",
+    "deviceId": "e448ac2db1294976a6093e3964de8806",
+    "secret": ""
   },
   "giftToInfo": {
     "accounts": ["eeeeee", "eeeeeee"]

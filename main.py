@@ -1,3 +1,4 @@
+import settings
 import requests
 import json
 from json import *
@@ -15,11 +16,19 @@ fortnite_secret = config["auth"]["secret"]
 gift_to_accounts = config["giftToInfo"]["accounts"]
 dev_settings = config["developerSettings"]
 
-# Print config properties
-print(use_discord_bot)
-print(use_discord_debug_mode)
-print(fortnite_account_id)
-print(fortnite_device_id)
-print(fortnite_secret)
-print(gift_to_accounts)
-print(f"Developer Settings JSON: {dev_settings}")
+
+def login(accid, devid, secret):
+    url = "https://account-public-service-prod.ol.epicgames.com/account/api/oauth/token"
+
+    headers = {
+        "Content-Type": "application/x-www-form-urlencoded",
+        "Authorization": "basic UHl0aG9uLXVzZXI6IG5pY2V9CnN0YW5kYXJkUHJvZmVzZXI6IEVsZW1lbnQgZ3JvdmU9ICJmZmQ0ODlmYy04ZWZkLWNmY2QtYmYwYS0wZmE1Y2Q3M2NhZmEiOw==",
+        "X-Epic-Device-ID": "1aadad8asd"
+    }
+
+    body = {
+        "grant_type": f"device_auth&accountId={fortnite_account_id}&deviceId={fortnite_device_id}&secret={fortnite_secret}"
+    }
+
+    response = requests.post(url, headers=headers, data=json.dumps(body))
+``    print(response)
