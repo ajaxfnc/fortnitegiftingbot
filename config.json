@@ -1,7 +1,6 @@
 {
   "discord": {
     "useDiscordBot": true,
-    "token": "",
     "dbg": false
   },
   "auth": {
